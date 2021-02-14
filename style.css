@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   perspective: 1200px;
+  background: lightgray;
 }
 
 .container {
@@ -21,12 +22,13 @@ body {
 }
 
 .card {
-  min-height: 80vh;
+  min-height: 90vh;
   width: 35rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   padding: 0rem 5rem;
   border-radius: 30px;
   transform-style: preserve-3d;
+  background: white;
 }
 
 .sneaker-container {
@@ -37,14 +39,14 @@ body {
 }
 
 .sneaker-image {
-  width: 20rem;
+  width: 20vw;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
 
 .circle {
-  width: 15rem;
-  height: 15rem;
+  width: 12vw;
+  height: 12vw;
   background: linear-gradient(
     to right,
     rgba(235, 235, 235, 0.75),
