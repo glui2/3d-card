@@ -67,3 +67,38 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.sizes button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+button.active {
+  background: #585858;
+  color: antiquewhite;
+  border: none;
+}
+
+button:focus {
+  border: none;
+}
+
+.purchase {
+  margin-top: 5rem;
+}
+
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: rgba(255, 191, 0, 0.75);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
