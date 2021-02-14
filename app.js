@@ -4,7 +4,7 @@ const container = document.querySelector(".container");
 
 // items
 const title = document.querySelector(".title");
-const sneaker = document.querySelector(".sneaker img");
+const sneaker = document.querySelector(".sneaker-image");
 const purchase = document.querySelector(".purchase button");
 const description = document.querySelector(".info h3");
 const sizes = document.querySelector(".sizes");
@@ -23,6 +23,10 @@ container.addEventListener("mouseleave", (e) => {
 
   //pop in
   title.style.transform = "translateZ(0px)";
+  sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
+  description.style.transform = "translateZ(0px)";
+  sizes.style.transform = "translateZ(0px)";
+  purchase.style.transform = "translateZ(0px)";
 });
 
 // revert animation transition to none when mouse enters container
@@ -31,4 +35,8 @@ container.addEventListener("mouseenter", (e) => {
 
   // pop out
   title.style.transform = "translateZ(150px)";
+  sneaker.style.transform = "translateZ(150px) rotateZ(10deg)";
+  description.style.transform = "translateZ(125px)";
+  sizes.style.transform = "translateZ(100px)";
+  purchase.style.transform = "translateZ(75px)";
 });

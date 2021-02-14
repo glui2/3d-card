@@ -109,4 +109,5 @@ button:focus {
   border: none;
   cursor: pointer;
   font-weight: bolder;
+  transition: all 0.75s ease-out;
 }
